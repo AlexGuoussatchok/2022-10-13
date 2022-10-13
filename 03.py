@@ -7,3 +7,10 @@ def fibonacci(index):
         return index
 
     return fibonacci(index - 1) + fibonacci(index - 2)
+
+
+def main():
+    index = int(input("Input index: "))
+    element = fibonacci(index)
+    msg = f"fibbonachi[{index}] --> {element}"
+    print(msg)
